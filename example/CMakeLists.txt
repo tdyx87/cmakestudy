@@ -37,9 +37,6 @@ SET(CMAKE_RUNTIME_OUTPUT_DIRECTORY   ${PROJECT_SOURCE_DIR}/bin)
 LINK_DIRECTORIES(${LIBRARY_OUTPUT_PATH})
 #windows(工程的名称) 生成执行文件的名称
 
-
-
-
 add_subdirectory(subdir)
 
 add_subdirectory(library)
@@ -51,6 +48,8 @@ target_link_libraries(demo demo5)
 add_executable(demo2 main.cpp)
 
 target_link_libraries(demo2 demo5)
+
+add_subdirectory(win32)
 
 
 
